@@ -1,0 +1,35 @@
+version: 1
+formatters:
+  proj_format:
+    format: "[%(asctime)s] [%(filename)s[line:%(lineno)d] [%(levelname)s]:%(message)s"
+    datefmt: "%Y-%m-%d %H-%M-%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: proj_format
+  exception:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: ERROR
+    formatter: proj_format
+    filename: exception.log
+    when: D
+    interval: 1
+    backupCount: 10
+    encoding: utf-8
+  test_log:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: proj_format
+    filename: test.log
+    when: D
+    interval: 1
+    backupCount: 10
+    encoding: utf-8
+
+loggers:
+  test_log:
+    level: INFO
+    handlers: [console, test_log, exception]
+    propagate: no

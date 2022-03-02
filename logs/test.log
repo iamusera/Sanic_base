@@ -1,0 +1,11 @@
+[2022-03-02 10-55-00] [serializer.py[line:11] [INFO]:
+函数：ti_2开始运行：
+[2022-03-02 10-55-00] [serializer.py[line:16] [INFO]:函数:ti_2运行了 4.291534423828125e-06秒
+[2022-03-02 11-25-33] [serializer.py[line:11] [INFO]:
+函数：ti_2开始运行：
+[2022-03-02 11-25-33] [serializer.py[line:16] [INFO]:函数:ti_2运行了 5.0067901611328125e-06秒
+[2022-03-02 11-25-34] [index2.py[line:25] [INFO]:test logger
+[2022-03-02 11-26-09] [serializer.py[line:11] [INFO]:
+函数：ti_2开始运行：
+[2022-03-02 11-26-09] [serializer.py[line:16] [INFO]:函数:ti_2运行了 6.198883056640625e-06秒
+[2022-03-02 11-26-09] [index2.py[line:25] [INFO]:test logger
